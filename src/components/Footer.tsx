@@ -1,25 +1,29 @@
-import Logo from './../assets/logo.png'
+import Logo from '../assets/images/pequeno-principe/pp-logo.png'
 
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
-        <div className="brand-wordmark">
-          <img src={Logo} alt="Colégio Itaqua" />
+        <div className="footer-top">
+          <a className="footer-brand" href="#inicio" aria-label="Colégio Pequeno Príncipe — início">
+            <img src={Logo} alt="Colégio Pequeno Príncipe" />
+          </a>
+
+          <nav className="footer-nav" aria-label="Rodapé">
+            <a href="#diferenciais">A escola</a>
+            <a href="#estrutura">Estrutura</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#faq">Dúvidas</a>
+            <a href="https://instagram.com/pprincipe_pprincesa" target="_blank" rel="noreferrer">
+              @pprincipe_pprincesa
+            </a>
+          </nav>
         </div>
 
-        <nav className="footer-nav" aria-label="Navegação do rodapé">
-          <a href="#diferenciais">A escola</a>
-          <a href="#estrutura-experiencias">Estrutura</a>
-          <a href="#localizacao">Localização</a>
-          <a href="#faq">Dúvidas</a>
-          <a href="#agendar-visita">Agendar uma visita</a>
-        </nav>
+        <p className="footer-copy">
+          © 2026 Colégio Pequeno Príncipe · Rede Liceu – Unidade Suzano. Todos os direitos reservados.
+        </p>
       </div>
-
-      <div className="footer-divider" />
-
-      <div className="footer-copy">© 2026 Colégio Itaqua. Todos os direitos reservados.</div>
     </footer>
   )
 }

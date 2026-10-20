@@ -8,10 +8,10 @@
   overflow: hidden;
   min-height: 80vh;
   padding: 42px 40px 0;
-  background: linear-gradient(70deg, #0b50b4 0%, #0d59c8 100%);
-  background-image: url('../assets/images/bg.png');
-  background-size: cover;
-  background-position: center;
+  background:
+    radial-gradient(ellipse 55% 60% at 75% 70%, rgba(64, 190, 255, 0.45) 0%, rgba(20, 110, 220, 0.25) 45%, rgba(0, 26, 94, 0) 80%),
+    radial-gradient(ellipse 50% 40% at 20% 0%, rgba(25, 140, 230, 0.3) 0%, rgba(0, 26, 94, 0) 70%),
+    linear-gradient(180deg, #00123f 0%, #001a5e 55%, #0a3c9c 100%);
 }
 
 .success-logo-wrap {
@@ -117,10 +117,10 @@
 }
 
 .success-btn-primary {
-  background: #f3d90d;
-  color: #0d2f67;
-  border: 2px solid rgba(13, 47, 103, 0.2);
-  box-shadow: 0 8px 22px rgba(243, 217, 13, 0.25);
+  background: #f7d417;
+  color: #001a5e;
+  border: 2px solid rgba(0, 26, 94, 0.2);
+  box-shadow: 0 8px 22px rgba(247, 212, 23, 0.25);
 }
 
 .success-btn-secondary {
@@ -154,7 +154,7 @@
 }
 
 .success-next-steps {
-  background: #f4f4f2;
+  background: #f5f8ff;
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
@@ -175,8 +175,8 @@
   min-height: 30px;
   padding: 0 18px;
   border-radius: 999px;
-  background: #f4d90d;
-  color: #0e2f67;
+  background: #f7d417;
+  color: #001a5e;
   font-size: 0.66rem;
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -185,7 +185,7 @@
 
 .success-next-header h2 {
   margin: 18px 0 0;
-  color: #0d2f67;
+  color: #001a5e;
   font-size: clamp(2.2rem, 4vw, 4.2rem);
   line-height: 1.05;
   letter-spacing: -0.06em;
@@ -210,8 +210,8 @@
   padding: 24px 22px 18px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 12px 26px rgba(20, 50, 90, 0.08);
-  border: 1px solid rgba(20, 50, 90, 0.08);
+  box-shadow: 0 12px 26px rgba(0, 26, 94, 0.08);
+  border: 1px solid rgba(0, 26, 94, 0.08);
   text-align: center;
 }
 
@@ -225,8 +225,8 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #f3d90d;
-  color: #0d2f67;
+  background: #f7d417;
+  color: #001a5e;
   font-size: 0.9rem;
   font-weight: 900;
 }
@@ -239,25 +239,25 @@
   height: 70px;
   margin-top: 16px;
   border-radius: 18px;
-  background: #dfeaf8;
-  color: #1d5ab2;
+  background: #f5f8ff;
+  color: #0a3c9c;
   font-size: 2.4rem;
   font-weight: 900;
 }
 
 .success-step-icon-alt {
-  background: #dff8ee;
-  color: #23865d;
+  background: rgba(61, 184, 240, 0.2);
+  color: #0a3c9c;
 }
 
 .success-step-icon-alt-2 {
-  background: #dfeaf8;
-  color: #0d2f67;
+  background: #f5f8ff;
+  color: #001a5e;
 }
 
 .success-step-card p {
   margin: 18px 0 0;
-  color: #0d2f67;
+  color: #001a5e;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 700;

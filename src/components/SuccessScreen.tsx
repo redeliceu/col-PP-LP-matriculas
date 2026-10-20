@@ -1,4 +1,4 @@
-import Logo from '../assets/logo.png'
+import Logo from '../assets/images/pequeno-principe/pp-logo.png'
 /* import ChildImage from '../assets/images/child.png' */
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsClipboardDataFill } from "react-icons/bs";
@@ -16,7 +16,7 @@ export default function SuccessScreen() {
       <div className="success-hero bg-black/70">
 
         <div className="success-logo-wrap">
-          <img src={Logo} alt="Colégio Itaqua" className="success-logo" />
+          <img src={Logo} alt="Colégio Pequeno Príncipe" className="success-logo" />
         </div>
 
         <div className="success-content">
@@ -42,7 +42,7 @@ export default function SuccessScreen() {
 
             {/* <div className="success-actions">
               <a
-                href="https://wa.me/5511972689163?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20matr%C3%ADculas."
+                href="https://wa.me/5511963709401?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20ao%20Col%C3%A9gio%20Pequeno%20Pr%C3%ADncipe"
                 target="_blank"
                 rel="noreferrer"
                 className="success-btn success-btn-primary"
