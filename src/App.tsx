@@ -88,7 +88,7 @@ const apiUrl = import.meta.env.VITE_API_URL as string | undefined
 
 const webhookUrl = import.meta.env.VITE_WEBHOOK_URL
 
-const whatsappLink = 'https://wa.me/5511963709401'
+const whatsappLink = 'https://wa.me/5511925316357'
 const mapsLink = 'https://www.google.com/maps/search/?api=1&query=R.+Dona+Augusta+Aparecida+de+Carvalho+Moraes,+421,+Suzano'
 const mapsEmbedUrl = 'https://www.google.com/maps?q=R.+Dona+Augusta+Aparecida+de+Carvalho+Moraes,+421,+Jardim+Santa+Helena,+Suzano+-+SP&z=15&output=embed'
 
@@ -648,7 +648,7 @@ function App() {
           <h2>A escola que é um <span className="gold-text">castelo.</span></h2>
           <a className="button button-yellow" href={`${whatsappLink}?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20ao%20Col%C3%A9gio%20Pequeno%20Pr%C3%ADncipe`} target="_blank" rel="noreferrer">
             <WhatsAppIcon />
-            Agendar pelo WhatsApp · 11 96370-9401
+            Agendar pelo WhatsApp · 11 92531-6357
           </a>
           <div className="banner-halo" aria-hidden="true" />
           <img className="banner-castle" src={CastleImage} alt="Fachada do castelo do Colégio Pequeno Príncipe" />

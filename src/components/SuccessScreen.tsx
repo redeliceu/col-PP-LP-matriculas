@@ -42,7 +42,7 @@ export default function SuccessScreen() {
 
             {/* <div className="success-actions">
               <a
-                href="https://wa.me/5511963709401?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20ao%20Col%C3%A9gio%20Pequeno%20Pr%C3%ADncipe"
+                href="https://wa.me/5511925316357?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20ao%20Col%C3%A9gio%20Pequeno%20Pr%C3%ADncipe"
                 target="_blank"
                 rel="noreferrer"
                 className="success-btn success-btn-primary"
