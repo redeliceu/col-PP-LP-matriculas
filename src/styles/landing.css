@@ -51,6 +51,10 @@ input {
     linear-gradient(180deg, #00123f 0%, #001a5e 55%, #0a3c9c 100%);
 }
 
+.hero-section {
+  min-height: 100vh;
+}
+
 .hero-stars {
   position: absolute;
   inset: 0;
@@ -132,6 +136,7 @@ input {
 .hero-row {
   display: flex;
   align-items: stretch;
+  flex: 1;
   gap: 32px;
   padding-top: 28px;
 }
@@ -142,7 +147,6 @@ input {
   flex-direction: column;
   gap: 18px;
   min-width: 0;
-  padding-bottom: 56px;
 }
 
 .hero-eyebrow,
@@ -211,9 +215,16 @@ input {
   gap: 12px;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .lead-form label {
   font-size: 12px;
   font-weight: 700;
+  text-align: left;
 }
 
 .lead-form input {
@@ -243,8 +254,7 @@ input {
   gap: 10px;
 }
 
-.button,
-.form-back {
+.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -290,16 +300,6 @@ input {
   opacity: 0.65;
 }
 
-.form-back {
-  min-height: 48px;
-  padding: 8px 16px;
-  border: 1px solid #c9d6f2;
-  background: #fff;
-  color: #001a5e;
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .form-message {
   margin: 0;
   color: #0a3c9c;
@@ -312,6 +312,7 @@ input {
   flex: 1 1 560px;
   min-width: 0;
   min-height: 520px;
+  z-index: 1;
 }
 
 .hero-halo,
@@ -328,23 +329,14 @@ input {
 
 .hero-castle {
   position: absolute;
-  right: 0;
-  bottom: 70px;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 18px 24px rgba(0, 8, 40, 0.55));
-}
-
-.hero-child {
-  position: absolute;
-  right: -10px;
-  bottom: 0;
+  top: 50%;
+  left: 35%;
   display: block;
   width: auto;
-  height: 62%;
-  filter: drop-shadow(0 12px 22px rgba(0, 8, 40, 0.5));
+  height: 70vh;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 18px 24px rgba(0, 8, 40, 0.55));
 }
 
 .school-strip {
@@ -1008,19 +1000,9 @@ input {
 }
 
 @media (max-width: 860px) {
-  .hero-row,
   .proposal-layout,
   .faq-layout {
     flex-direction: column;
-  }
-
-  .hero-row {
-    display: flex;
-  }
-
-  .hero-art {
-    flex-basis: auto;
-    min-height: 340px;
   }
 
   .hero-title {
@@ -1063,6 +1045,103 @@ input {
 
 }
 
+@media (max-width: 1023px) {
+  .hero-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+  }
+
+  .hero-header {
+    width: 100%;
+  }
+
+  .hero-row {
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .hero-copy {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 6vw, 48px);
+  }
+
+  .lead-card {
+    width: min(100%, 520px);
+  }
+
+  .hero-art {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .hero-row {
+    align-items: flex-end;
+  }
+
+  .hero-copy {
+    flex-basis: auto;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 20vh;
+    text-align: center;
+  }
+
+  .lead-card {
+    width: min(100%, 420px);
+  }
+
+  .hero-art {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    min-height: 0;
+  }
+
+  .hero-castle {
+    top: auto;
+    bottom: 0;
+    left: 36%;
+    height: min(70vh, 36.5vw);
+    max-width: none;
+    margin-bottom: 20vh;
+    transform: translateX(-50%);
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1550px) {
+  .hero-container {
+    width: 50%;
+  }
+
+  .hero-castle {
+    left: 45%;
+    height: min(70vh, 30vw);
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
 @media (max-width: 560px) {
   .hero-container {
     padding: 24px 18px 0;
@@ -1082,30 +1161,16 @@ input {
   }
 
   .hero-row {
-    padding-top: 28px;
+    padding-top: 0;
   }
 
   .hero-copy {
-    padding-bottom: 24px;
+    padding-bottom: 0;
   }
 
   .hero-eyebrow {
     font-size: 11px;
     letter-spacing: 2.5px;
-  }
-
-  .hero-art {
-    min-height: 280px;
-    margin: 0 -10px;
-  }
-
-  .hero-castle {
-    bottom: 34px;
-  }
-
-  .hero-child {
-    right: -2px;
-    height: 66%;
   }
 
   .school-strip-inner {
