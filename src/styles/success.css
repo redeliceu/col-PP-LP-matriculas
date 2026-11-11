@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   min-height: 80vh;
-  padding: 42px 40px 0;
+  padding: 42px 40px clamp(56px, 9vh, 112px);
   background:
     radial-gradient(ellipse 55% 60% at 75% 70%, rgba(64, 190, 255, 0.45) 0%, rgba(20, 110, 220, 0.25) 45%, rgba(0, 26, 94, 0) 80%),
     radial-gradient(ellipse 50% 40% at 20% 0%, rgba(25, 140, 230, 0.3) 0%, rgba(0, 26, 94, 0) 70%),
@@ -286,7 +286,7 @@
 
 @media (max-width: 640px) {
   .success-hero {
-    padding: 28px 18px 0;
+    padding: 28px 18px clamp(48px, 8vh, 80px);
   }
 
   .success-copy h1 {
