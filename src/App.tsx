@@ -3,6 +3,7 @@ import './styles/landing.css'
 import './styles/success.css'
 import Footer from './components/Footer'
 import SuccessScreen from './components/SuccessScreen'
+import { trackLead } from './lib/tracking'
 import Logo from './assets/images/pequeno-principe/pp-logo.png'
 import LiceuLogo from './assets/images/pequeno-principe/liceu-logo.png'
 import CastleImage from './assets/images/pequeno-principe/pp-castle.png'
@@ -364,6 +365,8 @@ function App() {
         whatsapp: '',
         interestSeries: '',
       })
+      // Envio confirmado pela API: registra a conversão antes de ir para /sucesso
+      trackLead(payload.interest)
       window.history.pushState({}, '', '/sucesso')
       setCurrentPath('/sucesso')
     } catch (error) {
